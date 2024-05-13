@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://i.imgur.com/4XaTd1y.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ipunto</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Roboto", sans-serif;
+      }
+      .container__form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("https://i.imgur.com/hj6vyol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: auto;
+      }
+
+      .form__image img {
+        width: 300px;
+      }
+      .from__input--controll {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0 10px 0 0;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0);
+        border-bottom: 3px solid white;
+      }
+
+      .from__input--controll label {
+        position: absolute;
+        pointer-events: none;
+        font-size: 20px;
+        font-weight: 600;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        transition: all 0.4s ease;
+        color: white;
+      }
+
+      .from__input--controll input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+      }
+
+      .from__input--controll input:focus ~ label,
+      .from__input--controll input:valid ~ label {
+        top: -20%;
+        left: -2px;
+      }
+
+      .form__box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.562);
+        backdrop-filter: blur(50px);
+      }
+      .form__box h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+      }
+      .form__box form button {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+        margin: 30px 0;
+        border: none;
+        color: white;
+        background-color: rgba(0, 188, 212, 0.5);
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .alert__from {
+        position: absolute;
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        padding: 20px;
+        border: 2px solid white;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .red {
+        background-color: rgba(255, 0, 0, 0.582);
+      }
+      .green {
+        background-color: rgba(9, 255, 0, 0.582);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container__form">
+      <div class="form__box">
+        <div id="box_alert" class="box__alert"></div>
+        <h1>Recover password</h1>
+
+        <form id="form" action="">
+          <div class="from__input--controll">
+            <input
+              id="email"
+              type="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+            <label for="">Mail</label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30"
+              width="30"
+              fill="#fff"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          sendEmail(email);
+        } else {
+          alert("Invalid email", true);
+        }
+      });
+
+      const sendEmail = async (email) => {
+        await fetch("/recover/sendEmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        })
+          .then((response) => response.json())
+          .then((data) => alert(data.message, data.error))
+          .catch((error) => console.error("Error sending data:", error));
+      };
+
+      function alert(message, error) {
+        const boxAlert = document.getElementById("box_alert");
+        boxAlert.innerHTML = "";
+
+        boxAlert.innerHTML = `
+                <div class="alert__from ${error ? "red" : "green"}">
+                    <h2>${message}</h2>
+                </div>
+                `;
+        setTimeout(() => {
+          boxAlert.innerHTML = "";
+          if (!error) {
+            window.location.href = "https://mail.google.com";
+          }
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

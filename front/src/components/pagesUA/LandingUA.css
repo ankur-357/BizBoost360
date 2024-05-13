@@ -1,0 +1,36 @@
+.landingUA-imageContainer {
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  opacity: .6;
+}
+.landingUA-img {
+  width: 100%;
+}
+.image-company-landingUA{
+  width: 5em;
+}
+.image-company-landingUA img{
+  width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.landingUA-img-company {
+  border-radius: 50%;
+}
+.landingUA-img-company{
+  width: 8em;
+}
+.company-name-landingUA{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.css-1un1hw3{
+  margin: 0 6em !important;
+}

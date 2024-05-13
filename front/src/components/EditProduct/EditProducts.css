@@ -1,0 +1,16 @@
+.input-select-edit{
+    border: 2px solid #9b27b09c;
+    border-radius: 5px;
+    height: 2em;
+}
+.input-select-edit-label{
+    color: #9c27b0;
+    font-weight: 800; 
+}
+.input-select-category-del{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 2.3em;
+    width: 100%;
+    padding: 1em;
+}

@@ -1,0 +1,13 @@
+.employes_viewi {
+    position: relative;
+    display: flex;
+    width: 95%;
+    min-height: 185px;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+    overflow-x: auto;
+    overflow-y: hidden;
+}

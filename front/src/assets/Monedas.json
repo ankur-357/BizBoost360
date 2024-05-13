@@ -1,0 +1,97 @@
+[
+  {
+    "country": "Canadá",
+    "simbolo": "CAD$",
+    "abreviacion": "CAD"
+  },
+  {
+    "country": "Estados Unidos",
+    "simbolo": "USD$",
+    "abreviacion": "USD"
+  },
+  {
+    "country": "Argentina",
+    "simbolo": "ARS$",
+    "abreviacion": "ARS"
+  },
+  {
+    "country": "Chile",
+    "simbolo": "CLP$",
+    "abreviacion": "CLP"
+  },
+  {
+    "country": "Colombia",
+    "simbolo": "COP$",
+    "abreviacion": "COP"
+  },
+  {
+    "country": "Perú",
+    "simbolo": "S/.",
+    "abreviacion": "PEN"
+  },
+  {
+    "country": "Brasil",
+    "simbolo": "R$",
+    "abreviacion": "BRL"
+  },
+  {
+    "country": "Venezuela",
+    "simbolo": "VES",
+    "abreviacion": "VES"
+  },
+  {
+    "country": "Guatemala",
+    "simbolo": "Q",
+    "abreviacion": "GTQ"
+  },
+  {
+    "country": "Nicaragua",
+    "simbolo": "C$",
+    "abreviacion": "NIO"
+  },
+  {
+    "country": "Honduras",
+    "simbolo": "L",
+    "abreviacion": "HNL"
+  },
+  {
+    "country": "Costa Rica",
+    "simbolo": "₡",
+    "abreviacion": "CRC"
+  },
+  {
+    "country": "Panamá",
+    "simbolo": "B/.",
+    "abreviacion": "PAB"
+  },
+  {
+    "country": "Belice",
+    "simbolo": "BZ$",
+    "abreviacion": "BZD"
+  },
+  {
+    "country": "Bahamas",
+    "simbolo": "BSD$",
+    "abreviacion": "BSD"
+  },
+  {
+    "country": "Barbados",
+    "simbolo": "BBD$",
+    "abreviacion": "BBD"
+  },
+  {
+    "country": "Jamaica",
+    "simbolo": "JMD$",
+    "abreviacion": "JMD"
+  },
+  {
+    "country": "Granada",
+    "simbolo": "XCD$",
+    "abreviacion": "XCD"
+  },
+  {
+    "country": "Haití",
+    "simbolo": "HTG",
+    "abreviacion": "HTG"
+  }
+]

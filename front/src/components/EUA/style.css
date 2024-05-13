@@ -1,0 +1,483 @@
+.EUA__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.EUA__sales__views{
+    font-size: 64.5%;
+}
+.EUA__header__company{
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 15px;
+}
+.EUA__header__company img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    user-select: none;
+}
+.EUA__link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+}
+.EUA__link:last-child svg{ 
+    font-size: 2rem;
+}
+/* !========================= Fin header ====================== */
+.EUA__info__and__total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px ;
+    font-size: 1rem;
+}
+.EUA__info{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    text-wrap: nowrap;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 7px;
+    border-radius: 5px;
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+
+}
+.EUA__fecha , .EUA__sale__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.EUA__total {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 15px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.EUA__info__list{
+display: flex;
+justify-content: space-between;
+gap: 5px;
+padding: 5px 7px;
+border-radius: 5px;
+}
+
+.EUA__total__list{ 
+    display: flex;
+    justify-content: space-between;
+}
+/* !========================= Fin Total e Info ====================== */
+
+.EUA__sales {
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+.EUA__product__container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+/* !========================= TABLA ====================== */
+
+.EUA__table__Product{
+    width: 400px;
+    height: 477px;
+    background: url("https://i.imgur.com/7ZjO0I9.png") center/cover no-repeat;
+    background-position-x: -155px;
+    overflow-y: auto;
+    border: solid 1px rgba(0, 0, 0, 0.397);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(78, 78, 78, 0.315);
+}
+
+
+
+.EUA__table__Product::-webkit-scrollbar{
+   width: 5px;
+   background-color: #b8b8b8;
+}
+
+.EUA__table__Product::-webkit-scrollbar-thumb {
+    background: #8a8a8a;
+    border-radius: 3px;
+}
+
+.EUA__table{
+    position: relative;
+    backdrop-filter:blur(20px) ;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: .9rem;
+    z-index: 2;
+}
+
+.EUA__table__body tr td,th{
+    border: 1px solid  rgba(0, 0, 0, 0.397);
+    padding: 0 5px;
+    user-select: none;
+    height: 18px !important;
+    text-transform: capitalize;
+}
+
+.EUA__table__body tr td:last-child{
+    border:none;
+}
+.EUA__table__body td{
+    text-wrap: nowrap;
+}
+.tr__btn--plus,.tr__btn--less{
+    color: rgb(100, 100, 100);
+    /* margin-top: 5px; */
+}
+
+
+.table__body__td--btn button{
+    margin: 3px 0;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ff0000e1;
+    box-shadow: inset 5px 5px 5px #af0000, inset -5px -5px 5px #ff3636;
+}
+.td__btn__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__tr--th {
+    text-align: center;
+}
+.table__body__td--btn {
+    padding: 0 !important;
+}
+.EUA__table__body--tr td:first-child{
+    text-align: start;
+}
+
+.EUA__table__body--tr:hover{
+    background-color: #9e9e9e5b;
+}
+.EUA__table__body--tr td{
+    text-align: center;
+    overflow-x: auto;
+    width: 10px;
+    text-wrap: nowrap;
+}
+.EUA__table__body--tr td::-webkit-scrollbar{
+    height: 0;
+    transition: all .3 ease;
+}
+.EUA__table__body--tr td:hover::-webkit-scrollbar{
+    height: 5px;
+}
+.EUA__table__body--tr td::-webkit-scrollbar-thumb {
+    background: #8a8a8a;
+    border-radius: 3px;
+}
+.header__tr--th{
+    border-top: 0;
+}
+.header__tr--th:first-child{
+    border-left: 0;
+}
+.EUA__table__body--tr td:first-child{
+    border-left: 0;
+}
+
+.table__body__td--btn {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+/* !========================= Contador de items ====================== */
+.EUA__items__Product{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 100%;
+    padding: 20px;
+    height: 97px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+}
+/* !========================= Fin Contador de items ====================== */
+
+.EUA__list__products__container{
+    width: 100%;
+    height:500px ;
+    /* background-color: red; */
+    font-size: 1rem;
+}
+/* !========================= Bucador ====================== */
+
+.EUA__products__search{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+.product__search--box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.product__search--box h4 {
+    font-size: 1.4rem;
+}
+.product__search--input{
+    display: flex;
+ background-color: white;
+ padding: 2px 4px;
+ border: solid 1px slategray;
+ border-radius: 5px;
+}
+
+.product__search--input input{
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #616161;
+}
+
+.product__search--input button {
+    display: flex;
+    place-items: center;
+    
+}
+
+.product__search--input button svg {
+    font-size: 1.4rem;
+    color: #8a8a8a;
+    transition: all .3s ease;
+}
+
+.product__search--input button svg:hover{
+    color: #616161;
+}
+
+.product__search--box select {
+    outline: none;
+    border: solid 1px slategray;
+    border-radius: 5px;
+    color: #8a8a8a;
+    width: 20%;
+}
+.select__category__eua{
+    display: none;
+}
+/* !========================= Lista de productos ====================== */
+
+.EUA__list__products--box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.EUA__list__off{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+    color: #b8b8b8;
+}
+.EUA__list__products{
+    width: 100% ;
+    height: 80% ; 
+    overflow-y: auto;
+}
+
+.EUA__list__products__ifinity{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.EUA__list__products::-webkit-scrollbar{
+    width: 10px; 
+}
+
+.EUA__list__products::-webkit-scrollbar-thumb {
+    background: #8a8a8a;
+    border-radius: 3px;
+ }
+
+.EUA__list--button{
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+}
+.EUA__list--button button{
+    display: flex;
+    place-items: center;
+    background-color: rgb(245, 243, 243);
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+    gap: 10px;
+    padding:20px;
+    border-radius:5px;
+    text-wrap: nowrap;
+    transition: all .3s ease;
+}
+.EUA__list--button button svg {
+    font-size: 3rem;
+}
+
+.EUA__list__btn-generate-sale:hover,
+.EUA__list--btn-full-Screen:hover{
+ color: green;
+}
+.EUA__list__btn-clear:hover,
+.EUA__list--btn-cerrar:hover{
+    color: red;
+}
+
+
+/* !========================= Card de producto ====================== */
+
+.EUA__product__card{
+    position: relative;
+    width: 260px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding:10px;
+    
+}
+
+.EUA__product__card img{
+    width: 100%;
+    height: 110px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.text--red{
+    color:rgba(255, 0, 0, 0.747);
+    font-weight: 500;
+}
+
+.EUA__product__card--btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: rgb(27, 163, 0);
+    box-shadow: 0px 4.46881px 4.46881px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease;
+}
+.EUA__product__card--btn:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 1250px){
+    
+    .EUA__table__Product{
+        width: 350px;
+    }
+    .EUA__list--button button svg {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:1100px){
+    .EUA__list--button button{
+        flex-direction: column;
+    }
+    .product__search--box h4{
+        font-size: 1.2rem;
+    }
+    .product__search--input input {
+        font-size: 1rem; 
+    }
+}
+@media (max-width:900px){
+    .EUA__sales{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .EUA__table__Product{
+        width: 100%;
+    }
+    .EUA__list__products--box{
+        height: 100vh;
+    }
+    .tr__btn--plus, .tr__btn--less {
+        font-size: 1.4rem;
+    }
+    .EUA__product__card{
+        height: 270px
+    }
+    .EUA__product__card img{
+        height: 160px;
+    }
+    .EUA__info{
+        gap: 20px;
+        width: 60%;
+    }
+    .EUA__total{
+        width: 40%;
+    }
+    .EUA__info__and__total{
+        gap: 10px;
+    }
+}
+@media (max-width:630px){
+    .EUA__info{
+        gap: 3px;
+        justify-content: space-between;
+        overflow-x: auto;
+    }
+    .EUA__info::-webkit-scrollbar-track{
+        height: 4px;
+        background-color: red;
+    }.EUA__info__and__total{
+        flex-direction: column;
+    }
+    .EUA__total,.EUA__info{
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    .EUA__info__and__total{
+        font-size: .7rem;
+    }
+    .EUA__list--button{
+        padding: 2px;
+    }
+}
+

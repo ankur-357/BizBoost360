@@ -1,0 +1,173 @@
+.form-createComponent {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  justify-content: center;
+  padding: 1em;
+  gap: 1em;
+  /* border: 1px solid rgb(17, 0, 255); */
+}
+
+.panelCreate-container {
+  width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  /* padding: 1em; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  /* border: 1px solid rgb(47, 0, 255); */
+}
+
+.title-createproduct {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.input-label {
+  font-weight: 500;
+  font-size: 1.7em;
+}
+
+.input-name {
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 3em;
+  padding: 1em;
+}
+
+.input-description {
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 6em;
+  padding: 1em;
+}
+
+.imageProduct-container {
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: white;
+}
+
+.container-image-bottons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-createProducts {
+  width: 4em;
+  margin-left: 2em;
+}
+
+.buttonsContainer {
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.buttonUploadImage {
+  width: 80%;
+  display: flex;
+}
+
+/******************PANEL OPCIONES**********************/
+.panelOptionsForm-container {
+  background-color: white;
+  width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: auto;
+  max-width: 25em;
+  margin-top: 1em;
+  align-items: flex-start;
+
+}
+
+.title-panelOptions {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.select-panelOption,
+.input-select {
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 2.5em;
+  padding-left: 0.5em;
+}
+
+.input-select-currency {
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 2.5em;
+  padding-left: 0.5em;
+  font-size: .9em;
+}
+
+.title-options {
+  font-weight: 500;
+}
+
+.option {
+  width: 3em;
+  margin-right: .8em;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.previewH2 {
+  display: inline-block;
+  font-weight: 800;
+}
+
+.previewH3 {
+  display: inline-block;
+  color: #9c27b0;
+  font-weight: 800;
+}
+
+.input-precio-panelOptions {
+  width: 100%;
+  margin-left: .5em;
+  margin-top: 5px;
+  height: 2.5em;
+  padding: .2em;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.option-precio-label {
+  width: 3em;
+  margin-left: .5em;
+}
+
+.option-moneda-label {
+  margin-right: .2em;
+}
+
+.option-select-currency {
+  height: 2.5em;
+}
+
+.input-quantity {
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 2.5em;
+  padding-left: 0.5em;
+  font-size: .9em;
+}
