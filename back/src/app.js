@@ -51,7 +51,9 @@ app.use('/api',categoriesRoutes)
 app.use(passwordRouter)
 
 app.use(express.static(join(__dirname,"../../front/dist/")));
-
+app.get("/", function (request, response) {
+  response.send("🙋‍♂️, 🌏 🎊✨🤩");
+});
 app.get('/*', (req,res)=>{
   res.sendFile(join(__dirname, '../../front/dist/', 'index.html'))
 });
