@@ -1,7 +1,7 @@
-import './style.css'
-import { useState, useEffect } from 'react'
+import './style.css';
+import { useState, useEffect } from 'react';
 import Header from '../shared/Header/Header';
-import EUAHeader from './components/EUAheader';
+import EUAHeader from './components/EUAHeader.jsx';
 import CardList from './components/datalist';
 import EUATable from './components/EUATable';
 import { headerTableData } from './components/data';
@@ -11,7 +11,7 @@ import { useEUA } from './hooks/useEUA'
 import EUAInfiniteScroll from './components/EUAInfiniteScroll';
 import EUASearch from './components/EUASearch';
 import EUAButton from './components/EUAButton';
-import { convert } from './utils/utils'
+import { convert } from './utils/utils';
 
 function EUA() {
     const [currentHour, setCurrentHour] = useState(getCurrentHour())
@@ -96,7 +96,7 @@ function EUA() {
             <Header />
             <section className='EUA__sales__views'>
 
-                <EUAHeader name={company.name} img={company?.image?.url} />
+                <EUAHeader name={company?.name} img={company?.image?.url} />
 
                 <section className='EUA__info__and__total'>
                     <dl className='EUA__info'>
