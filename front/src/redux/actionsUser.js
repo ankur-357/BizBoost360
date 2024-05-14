@@ -39,6 +39,7 @@ export const userRegisterAction = (values) => {
 export const userLoginAction = (values) => {
   return async (dispatch) => {
     try {
+      console.log(url);
       let res = await axios.post(`${url}/api/login`, values);
       dispatch({ type: USER_LOGIN, payload: res.data });
       sweetAlertsSuccessfully(
