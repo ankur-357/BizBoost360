@@ -27,7 +27,7 @@ export const getCompanyAction = (companyID) => {
             dispatch({ type: GET_COMPANY, payload: company.data })
             // console.log("COMPANY INFO ACTIONS", company.data)
         } catch (error) {
-            sweetAlertsError(error.response.data.message, "Intentar de nuevo", "OK");
+            sweetAlertsError(error.response.data.message, "try again", "OK");
         }
     }
 }
