@@ -86,7 +86,7 @@ const RegisterCompany = () => {
         <ButtonBack />
       </div>
       <h1 className="text-4xl text-center font-semibold font-barlow-condensed">
-        Registro de Empresa
+        Company Registration
       </h1>
       <form
         onSubmit={submitHandler}
@@ -98,7 +98,7 @@ const RegisterCompany = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="Nombre de la Empresa"
+              placeholder="Company Name"
               value={input.name}
               onChange={inputHandler}
               className="border-2 border-gray-400 p-2 rounded-lg"
@@ -112,7 +112,7 @@ const RegisterCompany = () => {
               type="text"
               id="sector"
               name="sector"
-              placeholder="Sector-Industria"
+              placeholder="Sector-Industry"
               value={input.sector}
               onChange={inputHandler}
               className="border-2 border-gray-400 p-2 rounded-lg"
@@ -126,7 +126,7 @@ const RegisterCompany = () => {
               type="text"
               id="country"
               name="country"
-              placeholder="País de origen"
+              placeholder="Country of origin"
               value={input.country}
               onChange={inputHandler}
               className="border-2 border-gray-400 p-2 rounded-lg"
@@ -136,13 +136,14 @@ const RegisterCompany = () => {
             ) : null}
           </div>
         </div>
-        {/* ***************************CARGA DE LA IMAGEN************************ */}
+        {/* ***************************
+IMAGE UPLOAD************************ */}
         <div>
           <p
             htmlFor="logoCompany"
             className="font-medium text-2xl text-gray-600 font-barlow-condensed"
           >
-            Logo Empresa
+            Company Logo
           </p>
           <div className="border-2 border-gray-400  rounded-xl bg-white mt-2 p-4 h-auto">
             <ImageUploading
@@ -171,7 +172,7 @@ const RegisterCompany = () => {
                       {...dragProps}
                     >
                       <AddPhotoAlternateOutlinedIcon className="m-1 text-sx font-roboto" />
-                      Agregar Imagen
+                      Add Image
                     </button>
                     <button
                       type="button"
@@ -181,7 +182,7 @@ const RegisterCompany = () => {
                       {...dragProps}
                     >
                       <DeleteOutlineOutlinedIcon className="m-1 text-sx font-roboto" />
-                      Borrar
+                      Delete
                     </button>
                   </div>
                 </div>
@@ -198,7 +199,7 @@ const RegisterCompany = () => {
             className="w-[150px] h-[40px] bg-[#4DD0E1] hover:bg-[#B2EBF2] text-white hover:text-[#00bcd4] border-[#4DD0E1] font-bold text-sm rounded-md animate-pulse"
           >
             {" "}
-            ENVIAR{" "}
+            TO SEND{" "}
           </button>
         </div>
       </form>
